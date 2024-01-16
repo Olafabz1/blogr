@@ -1,0 +1,344 @@
+*{
+ margin:0;
+ padding:0;
+}
+body{
+ width:100vw;
+ overflow-x: hidden;
+}
+.nav-component{
+  width:100%;
+ height:370px;
+ background-color:hsl(13, 100%, 72%);
+ border-bottom-left-radius:70px ;
+}
+
+.nav-component img{
+ width: 100%;
+height:400px;
+object-fit: contain;
+}
+nav{
+ display: flex;
+ margin-top:-350px ;
+ justify-content: space-around;
+}
+#myDropdown{
+ border: none;
+ background-color:hsl(13, 100%, 72%);
+ width:100px;
+ height:30px;
+ cursor: pointer;
+ padding:5px;
+ color: #fff;
+ font-family:'Ubuntu',
+  sans-serif;
+  font-size:12px;
+}
+option{
+ background-color: #fff;
+ color: #000;
+}
+button{
+width:60px;
+height:30px;
+padding:auto;
+border-radius:8px;
+cursor: pointer;
+border:none;
+background-color:hsl(13, 100%, 72%); 
+color: #fff;
+font-family:'Overpass',
+ sans-serif;
+ font-size:12px;
+}
+h1{
+ font-family:'Overpass',
+  sans-serif;
+  color: #fff;
+  font-size:40px;
+  margin-top:-8px;
+}
+header{
+text-align: center;
+}
+h3{
+ font-family: 'Overpass',
+   sans-serif;
+   font-size:25px;
+   color: #fff;
+   padding-top:60px;
+}
+header p{
+ color: #fff;
+ font-size:10px;
+ padding-top:20px;
+ font-family: 'Overpass',
+   sans-serif;
+}
+header button{
+ width:80px;
+ color: #fff;
+ font-family: 'Overpass',
+   sans-serif;
+ background-color:hsl(353, 100%, 62%);
+ border-radius:20px;
+ font-size:10px;
+font-weight: bold;
+border:1px solid #fff;
+margin-top:40px;
+}
+.free{
+ color: hsl(356, 100%, 66%);
+ background-color: #fff;
+ font-family: 'Overpass',
+   sans-serif;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index:999;
+  background-color:hsl(13, 100%, 72%);;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+.sidebar option{
+ width: 100%; 
+} 
+.menu-button{
+  display: none;
+}
+.mobile menu{
+  display: none;
+}
+
+
+/*End of header*/
+.intro{
+ display: flex;
+ margin:40px;
+ justify-content: center;
+ align-content: center;
+}
+main img{
+ width:650px;
+ margin-top:-10px;
+ padding-left:60px;
+}
+.editor{
+ width:500px;
+ margin:100px;
+}
+main h4{
+ font-family: 'Overpass',
+    sans-serif;
+ color:hsl(208, 49%, 24%) ;
+ font-size:20px;
+ padding-top:100px;
+ text-align: center;
+}
+main h5{
+ color: hsl(208, 49%, 24%);
+ font-family:'Overpass',
+  sans-serif;
+  font-size:14px;
+}
+main p{
+ font-size:12px;
+ line-height:18px ;
+ color:hsl(237, 17%, 21%) ;
+ font-family: 'Overpass',
+    sans-serif;
+}
+.infrastructure{
+ margin-top:50px;
+ background-color:hsl(237, 17%, 21%) ;
+ height:350px;
+ border-top-right-radius:100px;
+ border-bottom-left-radius: 100px;
+}
+.circles{
+  transform: rotate(180deg);
+  margin-top:5px;  
+}
+.state{
+ display: flex;
+ margin-top:-400px;
+ position: relative;
+}
+.art{
+ width: 600px;
+ padding-top: 200px;
+}
+.art h2{
+ font-family: 'Overpass',
+   sans-serif;
+ padding: 20px 80px;
+ color: #fff;
+}
+.art p{
+  font-family: 'Overpass',
+    sans-serif;
+ color: #fff;
+ padding:0px 80px;
+ font-size: 12px;
+}
+.simple{
+ display: flex;
+margin-top:200px;
+width:1300px ;
+}
+.tools{
+  padding: 60px 80px;
+}
+.tools p{
+ padding-top:8px;
+}
+/*End of main*/
+footer{
+ height: 250px;
+ display: flex;
+ background-color:hsl(237, 17%, 21%);
+ justify-content: center;
+ align-content: center;
+ border-top-right-radius:100px ;
+}
+ul{
+ width:200px ;
+ list-style-type: none;
+ padding: 30px 0px 10px 0px;
+}
+li{
+ color: #fff;
+ font-family:'Overpass',
+  sans-serif;
+ font-size:14px;
+ font-weight: bold;
+}
+a{
+ display: block;
+ padding-top:10px;
+ color: #fff;
+ text-decoration: none;
+ font-family:'Overpass',
+  sans-serif;
+  font-size: 12px;
+}
+footer img{
+padding-top:30px;
+}
+/*End of footer*/
+
+@media screen and (max-width:1200px){
+  .simple {
+      width:1100px;
+    }
+    .art {
+      width:400px;
+    }
+  }
+@media screen and (max-width: 951px){
+  #myDropdown {
+      font-size: 14px;
+    }
+  .menu-button{
+    display: block;
+  }
+  .dropdown{
+  display: none;
+}
+.sidebar {
+  width: 100%;
+  padding-top: 30px;
+}
+header{
+  margin-top:-350px;
+}
+.intro{
+  width:700px;
+}
+main img {
+    width:300px;
+  }
+.state {
+  margin-top:-200px;
+  padding-left:30px;
+}
+.art{
+  padding:10px 0px 0px 50px;
+}
+.infrastructure {
+  height:250px;
+}
+ .simple {
+   width:700px;
+  margin-top:10px;
+  padding-left:20px ;
+ }
+ .tools {
+  width:300px ;
+  padding-left:100px ;
+ }
+ ul{
+   width:100px ;
+ }
+}
+@media screen and (max-width:651px){
+  main h4{
+   padding-top:30px; 
+  }
+  .hideOnMobile {
+      display: none;
+    }
+  .menu-button {
+      display: block;
+      margin: auto;
+    }
+  .sidebar {
+      width: 100%;
+      height:1500px;
+      padding-top: 30px;
+    }
+    .intro{
+      display: flex;
+      flex-direction: column-reverse;
+      margin:0;
+    }
+    .editor{
+      width:400px;
+    }
+    .infrastructure {
+      height:600px;
+    }
+    .state{
+      display:flex ;
+      flex-direction: column;
+      margin-top: -170px;
+      padding-left:0px;
+    }
+  .simple{
+    display: flex;
+    flex-direction:column;
+    margin-top:30px;
+  }
+  footer{
+    height:800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer img{
+     margin-left:250px ;
+     padding-top:-50px ;
+    }
+  }
+
+
+
+
