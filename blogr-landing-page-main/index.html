@@ -11,77 +11,44 @@
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
-  <div class="nav-component">
+  <div class="app__header">
     <div>
       <img src="./images/bg-pattern-intro-desktop.svg" alt="">
     </div>
-    <nav>
+    <div class="app__header-nav">
       <h1>Blogr</h1>
-      <div class="dropdown">
-      <select id="myDropdown">
-        <option value="">Product</option>
-        <option value="">Overview</option>
-        <option value="">Pricing</option>
-        <option value="">Marketplace</option>
-        <option value="">Features</option>
-        <option value="">Integrations</option>
-      </select>
-
-      <select id="myDropdown">
-        <option value="">Company</option>
-        <option value="">About</option>
-        <option value="">Team</option>
-        <option value="">Blog</option>
-        <option value="">Careers</option>
-      </select>
-
-      <select id="myDropdown">
-        <option value="">Connect</option>
-        <option value="">Contact</option>
-        <option value="">Newsletter</option>
-        <option value="">LinkedIn</option>
-      </select>
-      <button>Login</button>
-      <button class="free">Sign Up</button> 
+      <nav>
+        <ul>
+          <li>Product</li>
+          <li>Company</li>
+          <li>Connect</li> 
+          <button>Login</button>
+          <button class="free">Sign Up</button> 
+        </ul>
+      </nav>
     </div>
-    <div class="mobile menu">
+    <div class="app__header-nav_mobile">
       <div class="sidebar">
         <img src="./images/icon-close.svg" alt="" onclick=hideSidebar()>
       </div>
       <div>
         <img src="./images/icon-hamburger.svg" alt="" class="menu-button" onclick="showSidebar()">
-        </div>
+      </div>
+      <!-- <div class="app__header-nav_mobile-links">
         <h1>Blogr</h1>
-        <div class="dropdown">
-          <select id="myDropdown">
-            <option value="">Product</option>
-            <option value="">Overview</option>
-            <option value="">Pricing</option>
-            <option value="">Marketplace</option>
-            <option value="">Features</option>
-            <option value="">Integrations</option>
-          </select>
-        
-          <select id="myDropdown">
-            <option value="">Company</option>
-            <option value="">About</option>
-            <option value="">Team</option>
-            <option value="">Blog</option>
-            <option value="">Careers</option>
-          </select>
-        
-          <select id="myDropdown">
-            <option value="">Connect</option>
-            <option value="">Contact</option>
-            <option value="">Newsletter</option>
-            <option value="">LinkedIn</option>
-          </select>
-          <button>Login</button>
-          <button class="free">Sign Up</button>
-        </div>
-        
+        <nav>
+          <ul>
+            <li>Product</li>
+            <li>Company</li>
+            <li>Connect</li> 
+            <button>Login</button>
+            <button class="free">Sign Up</button> 
+          </ul>
+        </nav>
+      </div>    -->
     </div>
-    </nav>
+  </div>
+
 
   <!--End of the nav-->
 <header>
